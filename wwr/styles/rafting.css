@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #282A73;
+    --secondary-color: #014428;
+    --accent1-color: #7F95D1;
+    --accent2-color: #72A98F;
+    --heading-font: 'Gabarito', sans-serif;
+    --font: 'Tillana', system-ui;
+}
+
+.tillana-regular {
+    font-family: "Tillana", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gabarito-headings {  /* this gives an error on my css validation, it copied as .gabarito-<uniquifier> or something like that and said I could pick my own name, but maybe I just need to pick a different font */
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    width: 50%;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    position: absolute;
+    bottom: 72%;
+    left: 40%;
+    right: 40%;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: var(--font);
+    font-size: small;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+article {
+    position: absolute;
+    top: 25%;
+	bottom: 25%;
+	left: 5%;
+    right: 5%;
+	background: radial-gradient(#eee, var(--accent1-color));
+	padding: 0.65rem;
+	opacity: 0.9;
+}
+
+section img {
+    max-width: 75%;
+    max-height: 300px;
+}
+
+article img {
+    max-width: 20%;
+    float: right;
+}
