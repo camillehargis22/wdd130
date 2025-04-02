@@ -3,7 +3,7 @@
     --secondary-color: #014428;
     --accent1-color: #7F95D1;
     --accent2-color: #72A98F;
-    --heading-font: 'Gabarito', sans-serif;
+    --heading-font: 'Boldonse', sans-serif;
     --font: 'Tillana', system-ui;
 }
 
@@ -13,15 +13,45 @@
     font-style: normal;
 }
 
-.gabarito-headings {  /* this gives an error on my css validation, it copied as .gabarito-<uniquifier> or something like that and said I could pick my own name, but maybe I just need to pick a different font */
-    font-family: "Gabarito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
     font-style: normal;
+  }
+  
+
+header {
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
 }
 
-html {
-    width: 50%;
+header img {
+    padding-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+nav li {
+    flex: 1 1 auto;
+}
+
+nav a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
 }
 
 h1 {
@@ -29,7 +59,7 @@ h1 {
     font-family: var(--heading-font);
     position: absolute;
     bottom: 72%;
-    left: 40%;
+    left: 44%;
     right: 40%;
 }
 
@@ -70,12 +100,55 @@ article {
 	opacity: 0.9;
 }
 
-section img {
-    max-width: 75%;
-    max-height: 300px;
-}
-
 article img {
     max-width: 20%;
     float: right;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.history div {
+    display: flex;
+}
+
+.history p {
+    padding: 10px;
+}
+
+.history img {
+    max-width: 300px;
+}
+
+.grid img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    padding-bottom: 20px;
+}
+
+footer nav {
+    display: flex;
+    float: right;
+    position: relative;
+    bottom: 35px;
+    right: 30px;
+}
+
+footer nav img {
+    max-width: 20px;
 }
