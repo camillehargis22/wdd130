@@ -71,7 +71,7 @@ h2 {
 p {
     color: var(--secondary-color);
     font-family: var(--font);
-    font-size: small;
+    font-size: medium;
 }
 
 footer a {
@@ -152,3 +152,11 @@ footer nav {
 footer nav img {
     max-width: 20px;
 }
+
+figcaption {
+    font-family: var(--font);
+    color: var(--primary-color);
+    font-size: large;
+}
+
+/* figcaption needs to have diff color and font, make p bigger */
