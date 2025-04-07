@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD | Form Quiz Practice</title>
+    <meta name="description" content="Form Practice Quiz for WDD130, Camille Hargis">
+    <meta name="author" content="Camille Hargis">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Tillana&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Form Practice Quiz | Camille Hargis</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Student</legend>
+                <label for="fullname">Name:</label>
+                <input type="text" name="fullname" id="fullname">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="q1">1. HTML is a programming language. True/False</label>
+                <input type="text" name="q1" id="q1">
+                <label for="q2">2. What does CSS stand for and why is it important?</label>
+                <textarea name="q2" id="q2"></textarea>
+                <label for="q3">3. What repository do we use for our class?</label>
+                <select name="q3" id="q3">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="Bitbucket">Bitbucket</option>
+                    <option value="GitHub">GitHub</option>
+                    <option value="Amazon">Amazon Web Services</option>
+                </select>
+                <label for="q4">4. I am using a grid and want to color the first 3 of 5 columns. What will be the grid-column-end?</label>
+                <input type="number" name="q4" id="q4">
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+        <footer>
+            <p>&copy;2025 | HTML Form - Practice Quiz | Camille Hargis</p>
+        </footer>
+    </main>
+</body>
+</html>
