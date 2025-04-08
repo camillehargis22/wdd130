@@ -141,6 +141,14 @@ footer {
     padding-bottom: 20px;
 }
 
+footer p a {
+    color: var(--secondary-color);
+}
+
+footer p a:hover {
+    color: var(--accent1-color);
+}
+
 footer nav {
     display: flex;
     float: right;
@@ -159,4 +167,93 @@ figcaption {
     font-size: large;
 }
 
-/* organize css file better */
+.wireframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+}
+
+.contact, .family {
+    border: 1px solid var(--primary-color);
+}
+
+.contact div {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.right {
+    text-align: right;
+    margin-right: 30px;
+}
+
+iframe {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: var(--accent1-color);
+    opacity: .9;
+    display: grid;
+    font-weight: 600;
+}
+
+fieldset {
+    margin: 1rem;
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    font-family: var(--heading-font);
+    text-align: left;
+}
+
+textarea {
+    width: 97%;
+    height: 100px;
+}
+
+label, input, button, textarea {
+    font-family: var(--font);
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.subscription {
+    text-align: center;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+}
