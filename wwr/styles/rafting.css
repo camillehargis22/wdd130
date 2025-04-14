@@ -289,3 +289,9 @@ table img {
     max-width: 300px;
     max-height: 300px;
 }
+
+.mission {
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    margin: 20px;
+}
